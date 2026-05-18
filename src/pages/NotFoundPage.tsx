@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { SiteLayout } from "../components/layout/SiteLayout";
-import { notFoundContent } from "../data/site";
+import { notFoundContent } from "@/content/site";
+import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 
 type NotFoundPageProps = {
   eyebrow?: string;

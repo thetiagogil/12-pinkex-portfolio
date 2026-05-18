@@ -1,9 +1,9 @@
-import { PageIntro } from "../components/common/PageIntro";
-import { FormattedTitle } from "../components/common/FormattedTitle";
-import { SiteLayout } from "../components/layout/SiteLayout";
-import { ProjectsGrid } from "../components/projects/ProjectsGrid";
-import { projects } from "../data/projects";
-import { projectsPageContent } from "../data/site";
+import { projectsPageContent } from "@/content/site";
+import { ProjectsGrid } from "@/features/projects/components/ProjectsGrid";
+import { projects } from "@/features/projects/lib/project-queries";
+import { FormattedTitle } from "@/shared/components/common/FormattedTitle";
+import { PageIntro } from "@/shared/components/common/PageIntro";
+import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 
 export function ProjectsPage() {
   const { intro } = projectsPageContent;
