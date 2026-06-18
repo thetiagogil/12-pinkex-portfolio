@@ -2,7 +2,7 @@ import { EducationCard } from "./EducationCard";
 import { educationEntries } from "@/content/profile";
 import { aboutPageContent } from "@/content/site";
 
-export function EducationSection() {
+export const EducationSection = () => {
   const { education } = aboutPageContent;
 
   return (
@@ -28,4 +28,4 @@ export function EducationSection() {
       </div>
     </section>
   );
-}
+};

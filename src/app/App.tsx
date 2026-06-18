@@ -1,7 +1,7 @@
 import { AppRouter } from "@/app/AppRouter";
 
-function App() {
+const App = () => {
   return <AppRouter />;
-}
+};
 
 export default App;

@@ -3,7 +3,7 @@ import { getContactLinks } from "@/features/profile/lib/contact-links";
 
 const contactLinks = getContactLinks();
 
-export function ContactLinksSection() {
+export const ContactLinksSection = () => {
   return (
     <section className="pb-16 sm:pb-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-8">
@@ -15,4 +15,4 @@ export function ContactLinksSection() {
       </div>
     </section>
   );
-}
+};

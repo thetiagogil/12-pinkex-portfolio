@@ -10,10 +10,10 @@ type ProjectDetailHeroProps = {
   returnTo: string;
 };
 
-export function ProjectDetailHero({
+export const ProjectDetailHero = ({
   project,
   returnTo,
-}: ProjectDetailHeroProps) {
+}: ProjectDetailHeroProps) => {
   return (
     <PageIntro
       before={
@@ -59,4 +59,4 @@ export function ProjectDetailHero({
       }
     />
   );
-}
+};

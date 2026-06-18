@@ -12,7 +12,7 @@ type ProjectDetailLocationState = {
   returnTo?: string;
 };
 
-export function ProjectDetailPage() {
+export const ProjectDetailPage = () => {
   const { projectId } = useParams<{ projectId: string }>();
   const location = useLocation();
   const locationState = location.state as ProjectDetailLocationState | null;
@@ -41,4 +41,4 @@ export function ProjectDetailPage() {
       />
     </SiteLayout>
   );
-}
+};

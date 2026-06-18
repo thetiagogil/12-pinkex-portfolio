@@ -1,6 +1,6 @@
 import { profileInfo } from "@/content/profile";
 
-export function Footer() {
+export const Footer = () => {
   return (
     <footer className="border-stone/60 relative z-10 mt-24 border-t">
       <div className="text-graphite mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 px-4 py-8 text-sm sm:flex-row sm:items-center sm:px-8 sm:py-10">
@@ -23,4 +23,4 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};

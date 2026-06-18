@@ -14,10 +14,10 @@ const arrowIcons: Record<AnimatedArrowDirection, LucideIcon> = {
   right: ArrowRight,
 };
 
-export function AnimatedArrow({
+export const AnimatedArrow = ({
   direction = "right",
   className = "h-4 w-4",
-}: AnimatedArrowProps) {
+}: AnimatedArrowProps) => {
   const Icon = arrowIcons[direction];
 
   return (
@@ -33,4 +33,4 @@ export function AnimatedArrow({
       <Icon className="h-full w-full" />
     </span>
   );
-}
+};

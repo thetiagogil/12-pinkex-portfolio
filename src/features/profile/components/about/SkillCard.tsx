@@ -7,7 +7,7 @@ type SkillCardProps = {
   delay?: number;
 };
 
-export function SkillCard({ group, icon: Icon, delay }: SkillCardProps) {
+export const SkillCard = ({ group, icon: Icon, delay }: SkillCardProps) => {
   return (
     <div className="soft-card reveal p-6 sm:p-10" data-delay={delay}>
       <div className="mb-2 flex items-center gap-3">
@@ -31,4 +31,4 @@ export function SkillCard({ group, icon: Icon, delay }: SkillCardProps) {
       </div>
     </div>
   );
-}
+};

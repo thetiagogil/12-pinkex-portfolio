@@ -7,7 +7,7 @@ type ProjectImageCarouselProps = {
   images: readonly [ProjectImage, ...ProjectImage[]];
 };
 
-export function ProjectImageCarousel({ images }: ProjectImageCarouselProps) {
+export const ProjectImageCarousel = ({ images }: ProjectImageCarouselProps) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const normalizedImageIndex = activeImageIndex % images.length;
   const activeImage = images[normalizedImageIndex];
@@ -70,4 +70,4 @@ export function ProjectImageCarousel({ images }: ProjectImageCarouselProps) {
       </div>
     </section>
   );
-}
+};

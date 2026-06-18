@@ -9,14 +9,14 @@ type PageIntroProps = {
   before?: ReactNode;
 };
 
-export function PageIntro({
+export const PageIntro = ({
   eyebrow,
   title,
   subheading,
   description,
   actions,
   before,
-}: PageIntroProps) {
+}: PageIntroProps) => {
   const titleMargin = eyebrow ? "mt-5" : "mt-0";
 
   return (
@@ -56,4 +56,4 @@ export function PageIntro({
       </div>
     </section>
   );
-}
+};

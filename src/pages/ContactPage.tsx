@@ -4,7 +4,7 @@ import { FormattedTitle } from "@/shared/components/common/FormattedTitle";
 import { PageIntro } from "@/shared/components/common/PageIntro";
 import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 
-export function ContactPage() {
+export const ContactPage = () => {
   const { intro } = contactPageContent;
 
   return (
@@ -18,4 +18,4 @@ export function ContactPage() {
       <ContactLinksSection />
     </SiteLayout>
   );
-}
+};

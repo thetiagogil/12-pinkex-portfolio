@@ -12,13 +12,13 @@ type ProjectDetailViewProps = ProjectNavigation & {
   returnTo: string;
 };
 
-export function ProjectDetailView({
+export const ProjectDetailView = ({
   project,
   focus,
   returnTo,
   previousProject,
   nextProject,
-}: ProjectDetailViewProps) {
+}: ProjectDetailViewProps) => {
   return (
     <>
       <ProjectDetailHero project={project} returnTo={returnTo} />
@@ -33,4 +33,4 @@ export function ProjectDetailView({
       />
     </>
   );
-}
+};

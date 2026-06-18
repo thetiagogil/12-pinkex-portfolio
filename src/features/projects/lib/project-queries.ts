@@ -6,10 +6,10 @@ export const projects: Projects = [...projectEntries].sort(
     Date.parse(secondProject.date.start) - Date.parse(firstProject.date.start),
 );
 
-export function getProjectById(projectId: string) {
+export const getProjectById = (projectId: string) => {
   return projects.find((project) => project.id === projectId);
-}
+};
 
-export function getFeaturedProjects(limit: number): readonly Project[] {
+export const getFeaturedProjects = (limit: number): readonly Project[] => {
   return projects.slice(0, Math.max(0, limit));
-}
+};

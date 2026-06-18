@@ -5,7 +5,7 @@ type ContactLinkCardProps = {
   index: number;
 };
 
-export function ContactLinkCard({ link, index }: ContactLinkCardProps) {
+export const ContactLinkCard = ({ link, index }: ContactLinkCardProps) => {
   return (
     <a
       href={link.href}
@@ -25,4 +25,4 @@ export function ContactLinkCard({ link, index }: ContactLinkCardProps) {
       </span>
     </a>
   );
-}
+};

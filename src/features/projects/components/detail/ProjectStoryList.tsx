@@ -5,7 +5,7 @@ type ProjectStoryListProps = {
   project: Project;
 };
 
-export function ProjectStoryList({ project }: ProjectStoryListProps) {
+export const ProjectStoryList = ({ project }: ProjectStoryListProps) => {
   return (
     <section className="py-8 sm:py-12">
       <div className="mx-auto max-w-5xl px-4 sm:px-8">
@@ -21,4 +21,4 @@ export function ProjectStoryList({ project }: ProjectStoryListProps) {
       </div>
     </section>
   );
-}
+};

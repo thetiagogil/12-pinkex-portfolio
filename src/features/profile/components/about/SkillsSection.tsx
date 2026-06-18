@@ -8,7 +8,7 @@ const skillCards = skillGroups.map((group) => ({
   icon: getIcon(group.icon),
 }));
 
-export function SkillsSection() {
+export const SkillsSection = () => {
   const { skills } = aboutPageContent;
 
   return (
@@ -37,4 +37,4 @@ export function SkillsSection() {
       </div>
     </section>
   );
-}
+};

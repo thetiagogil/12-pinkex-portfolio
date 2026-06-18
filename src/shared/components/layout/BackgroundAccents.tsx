@@ -1,4 +1,4 @@
-export function BackgroundAccents() {
+export const BackgroundAccents = () => {
   return (
     <div className="background-accents" aria-hidden>
       <span className="background-accent background-accent-left-top" />
@@ -7,4 +7,4 @@ export function BackgroundAccents() {
       <span className="background-accent background-accent-right-bottom" />
     </div>
   );
-}
+};

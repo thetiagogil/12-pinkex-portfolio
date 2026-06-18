@@ -10,10 +10,10 @@ type ProjectCardDetailedProps = {
   index?: number;
 };
 
-export function ProjectCardDetailed({
+export const ProjectCardDetailed = ({
   project,
   index = 0,
-}: ProjectCardDetailedProps) {
+}: ProjectCardDetailedProps) => {
   const image = project.images[0];
   const location = useLocation();
 
@@ -68,4 +68,4 @@ export function ProjectCardDetailed({
       </div>
     </Link>
   );
-}
+};

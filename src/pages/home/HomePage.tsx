@@ -6,7 +6,7 @@ import { FeaturedProjectsSection } from "./_components/FeaturedProjectsSection";
 import { HomeHero } from "./_components/HomeHero";
 import { ToolboxPreviewSection } from "./_components/ToolboxPreviewSection";
 
-export function HomePage() {
+export const HomePage = () => {
   const featuredProjects = getFeaturedProjects(
     homePageContent.featuredProjects.limit,
   );
@@ -19,4 +19,4 @@ export function HomePage() {
       <AvailabilityCta />
     </SiteLayout>
   );
-}
+};

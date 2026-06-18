@@ -15,19 +15,19 @@ const monthLabels = [
   "Dec",
 ] as const;
 
-export function getProjectType(project: Project) {
+export const getProjectType = (project: Project) => {
   return (
     project.facts.find((fact) => fact.label === "Type")?.value ?? "Project"
   );
-}
+};
 
-export function getProjectFocus(project: Project) {
+export const getProjectFocus = (project: Project) => {
   const factFocus = project.facts.find((fact) => fact.label === "Focus")?.value;
 
   return factFocus || getProjectType(project);
-}
+};
 
-export function formatProjectDateRange(project: Project) {
+export const formatProjectDateRange = (project: Project) => {
   const startDate = parseProjectDate(project.date.start);
 
   if (!project.date.end) {
@@ -41,19 +41,19 @@ export function formatProjectDateRange(project: Project) {
   }
 
   return `${formatProjectMonth(startDate)} - ${formatProjectMonth(endDate)}`;
-}
+};
 
-function formatProjectMonth(date: Date) {
+const formatProjectMonth = (date: Date) => {
   return `${monthLabels[date.getUTCMonth()]} ${date.getUTCFullYear()}`;
-}
+};
 
-function parseProjectDate(value: string) {
+const parseProjectDate = (value: string) => {
   return new Date(value);
-}
+};
 
-function isSameProjectMonth(firstDate: Date, secondDate: Date) {
+const isSameProjectMonth = (firstDate: Date, secondDate: Date) => {
   return (
     firstDate.getUTCFullYear() === secondDate.getUTCFullYear() &&
     firstDate.getUTCMonth() === secondDate.getUTCMonth()
   );
-}
+};

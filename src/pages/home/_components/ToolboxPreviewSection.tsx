@@ -6,7 +6,7 @@ import {
 } from "@/features/profile/lib/skill-utils";
 import { AnimatedArrow } from "@/shared/components/common/AnimatedArrow";
 
-export function ToolboxPreviewSection() {
+export const ToolboxPreviewSection = () => {
   const { toolboxPreview } = homePageContent;
   const previewSkillGroups = getPreviewSkillGroups();
   const previewGridColumns =
@@ -54,4 +54,4 @@ export function ToolboxPreviewSection() {
       </div>
     </section>
   );
-}
+};

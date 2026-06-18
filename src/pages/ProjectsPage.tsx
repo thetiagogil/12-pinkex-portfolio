@@ -5,7 +5,7 @@ import { FormattedTitle } from "@/shared/components/common/FormattedTitle";
 import { PageIntro } from "@/shared/components/common/PageIntro";
 import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 
-export function ProjectsPage() {
+export const ProjectsPage = () => {
   const { intro } = projectsPageContent;
 
   return (
@@ -19,4 +19,4 @@ export function ProjectsPage() {
       <ProjectsGrid projects={projects} />
     </SiteLayout>
   );
-}
+};

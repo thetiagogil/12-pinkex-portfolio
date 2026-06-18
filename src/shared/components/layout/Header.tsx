@@ -3,7 +3,7 @@ import { NavbarMenu } from "./NavbarMenu";
 import { BrandLink } from "./BrandLink";
 import { navigationLinks } from "@/content/site";
 
-export function Header() {
+export const Header = () => {
   return (
     <header className="border-stone/60 bg-background/80 sticky top-0 z-50 border-b backdrop-blur-md transition-colors duration-300">
       <div className="relative z-50 mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-4 sm:px-8">
@@ -31,4 +31,4 @@ export function Header() {
       </div>
     </header>
   );
-}
+};

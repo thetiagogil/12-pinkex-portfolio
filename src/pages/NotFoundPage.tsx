@@ -8,11 +8,11 @@ type NotFoundPageProps = {
   description?: string;
 };
 
-export function NotFoundPage({
+export const NotFoundPage = ({
   eyebrow = notFoundContent.page.eyebrow,
   title = notFoundContent.page.title,
   description = notFoundContent.page.description,
-}: NotFoundPageProps) {
+}: NotFoundPageProps) => {
   return (
     <SiteLayout>
       <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-32">
@@ -27,4 +27,4 @@ export function NotFoundPage({
       </div>
     </SiteLayout>
   );
-}
+};

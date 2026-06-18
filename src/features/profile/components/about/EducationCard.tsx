@@ -7,11 +7,11 @@ type EducationCardProps = {
   delay?: number;
 };
 
-export function EducationCard({
+export const EducationCard = ({
   entry,
   stackLabel,
   delay,
-}: EducationCardProps) {
+}: EducationCardProps) => {
   return (
     <article className="soft-card reveal p-6 sm:p-8" data-delay={delay}>
       <div className="flex flex-col items-start justify-between gap-x-6 gap-y-2 sm:flex-row">
@@ -49,4 +49,4 @@ export function EducationCard({
       ) : null}
     </article>
   );
-}
+};

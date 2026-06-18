@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export function useReveal() {
+export const useReveal = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -38,4 +38,4 @@ export function useReveal() {
 
     return () => observer.disconnect();
   }, [pathname]);
-}
+};

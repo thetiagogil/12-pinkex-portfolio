@@ -5,7 +5,7 @@ type FormattedTitleProps = {
   segments: readonly TextSegment[];
 };
 
-export function FormattedTitle({ segments }: FormattedTitleProps) {
+export const FormattedTitle = ({ segments }: FormattedTitleProps) => {
   return (
     <>
       {segments.map((segment, index) => (
@@ -20,4 +20,4 @@ export function FormattedTitle({ segments }: FormattedTitleProps) {
       ))}
     </>
   );
-}
+};

@@ -5,7 +5,7 @@ type ProjectsGridProps = {
   projects: readonly Project[];
 };
 
-export function ProjectsGrid({ projects }: ProjectsGridProps) {
+export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
   return (
     <section className="pb-20 sm:pb-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-8">
@@ -21,4 +21,4 @@ export function ProjectsGrid({ projects }: ProjectsGridProps) {
       </div>
     </section>
   );
-}
+};

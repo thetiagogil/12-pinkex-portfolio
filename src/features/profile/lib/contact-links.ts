@@ -10,11 +10,11 @@ export type ContactLink = {
   icon: LucideIcon;
 };
 
-export function getSocialLink(socialId: string) {
+export const getSocialLink = (socialId: string) => {
   return profileInfo.socials.find((social) => social.id === socialId);
-}
+};
 
-export function getContactLinks(): ContactLink[] {
+export const getContactLinks = (): ContactLink[] => {
   const socials: readonly SocialLink[] = profileInfo.socials;
   const socialLinks = socials.map((social) => ({
     label: social.label,
@@ -32,9 +32,9 @@ export function getContactLinks(): ContactLink[] {
       icon: getIcon("fileText"),
     },
   ];
-}
+};
 
-function getSocialValue(href: string) {
+const getSocialValue = (href: string) => {
   if (href.startsWith("mailto:")) {
     return href.replace("mailto:", "");
   }
@@ -43,4 +43,4 @@ function getSocialValue(href: string) {
     .replace("https://www.", "")
     .replace("https://", "")
     .replace(/\/$/, "");
-}
+};

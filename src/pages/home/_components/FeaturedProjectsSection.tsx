@@ -8,9 +8,9 @@ type FeaturedProjectsSectionProps = {
   projects: readonly Project[];
 };
 
-export function FeaturedProjectsSection({
+export const FeaturedProjectsSection = ({
   projects,
-}: FeaturedProjectsSectionProps) {
+}: FeaturedProjectsSectionProps) => {
   const { featuredProjects } = homePageContent;
 
   return (
@@ -38,4 +38,4 @@ export function FeaturedProjectsSection({
       </div>
     </section>
   );
-}
+};

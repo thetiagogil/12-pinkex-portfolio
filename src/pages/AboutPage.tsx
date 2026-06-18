@@ -6,7 +6,7 @@ import { EducationSection } from "@/features/profile/components/about/EducationS
 import { SkillsSection } from "@/features/profile/components/about/SkillsSection";
 import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 
-export function AboutPage() {
+export const AboutPage = () => {
   return (
     <SiteLayout>
       <AboutHero />
@@ -17,4 +17,4 @@ export function AboutPage() {
       <AboutActions />
     </SiteLayout>
   );
-}
+};

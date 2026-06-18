@@ -8,7 +8,7 @@ type SiteLayoutProps = {
   children: ReactNode;
 };
 
-export function SiteLayout({ children }: SiteLayoutProps) {
+export const SiteLayout = ({ children }: SiteLayoutProps) => {
   useReveal();
 
   return (
@@ -19,4 +19,4 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       <Footer />
     </div>
   );
-}
+};

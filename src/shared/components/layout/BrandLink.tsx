@@ -6,7 +6,7 @@ type BrandLinkProps = {
   onClick?: () => void;
 };
 
-export function BrandLink({ compact = false, onClick }: BrandLinkProps) {
+export const BrandLink = ({ compact = false, onClick }: BrandLinkProps) => {
   const label = compact ? profileInfo.shortName : profileInfo.fullName;
 
   return (
@@ -15,4 +15,4 @@ export function BrandLink({ compact = false, onClick }: BrandLinkProps) {
       <span className="font-display text-lg">{label}</span>
     </Link>
   );
-}
+};

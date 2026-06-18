@@ -9,7 +9,7 @@ type ProjectCardProps = {
   index?: number;
 };
 
-export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+export const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
   const image = project.images[0];
   const location = useLocation();
 
@@ -50,4 +50,4 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       </div>
     </Link>
   );
-}
+};

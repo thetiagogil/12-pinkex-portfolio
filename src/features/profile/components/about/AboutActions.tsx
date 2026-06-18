@@ -5,7 +5,7 @@ import { getSocialLink } from "@/features/profile/lib/contact-links";
 
 const emailHref = getSocialLink("email")?.href ?? "/contact";
 
-export function AboutActions() {
+export const AboutActions = () => {
   const { actions } = aboutPageContent;
 
   return (
@@ -27,4 +27,4 @@ export function AboutActions() {
       </div>
     </section>
   );
-}
+};

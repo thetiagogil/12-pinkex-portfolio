@@ -4,7 +4,7 @@ import { getSocialLink } from "@/features/profile/lib/contact-links";
 
 const emailHref = getSocialLink("email")?.href ?? "/contact";
 
-export function AvailabilityCta() {
+export const AvailabilityCta = () => {
   const availabilityCta = profileInfo.openToWork.cta;
 
   if (!profileInfo.openToWork.value || !availabilityCta) {
@@ -31,4 +31,4 @@ export function AvailabilityCta() {
       </div>
     </section>
   );
-}
+};

@@ -10,11 +10,11 @@ type ProjectNavigationLinksProps = {
   returnTo: string;
 };
 
-export function ProjectNavigationLinks({
+export const ProjectNavigationLinks = ({
   previousProject,
   nextProject,
   returnTo,
-}: ProjectNavigationLinksProps) {
+}: ProjectNavigationLinksProps) => {
   if (!previousProject && !nextProject) {
     return null;
   }
@@ -44,7 +44,7 @@ export function ProjectNavigationLinks({
       </div>
     </section>
   );
-}
+};
 
 type ProjectNavigationLinkProps = {
   project: Project;
@@ -53,12 +53,12 @@ type ProjectNavigationLinkProps = {
   direction: "previous" | "next";
 };
 
-function ProjectNavigationLink({
+const ProjectNavigationLink = ({
   project,
   returnTo,
   label,
   direction,
-}: ProjectNavigationLinkProps) {
+}: ProjectNavigationLinkProps) => {
   const isPrevious = direction === "previous";
 
   return (
@@ -85,4 +85,4 @@ function ProjectNavigationLink({
       </span>
     </Link>
   );
-}
+};

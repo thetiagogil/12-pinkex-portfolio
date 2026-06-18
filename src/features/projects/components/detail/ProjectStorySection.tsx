@@ -3,10 +3,10 @@ type ProjectStorySectionProps = {
   paragraphs: readonly string[];
 };
 
-export function ProjectStorySection({
+export const ProjectStorySection = ({
   label,
   paragraphs,
-}: ProjectStorySectionProps) {
+}: ProjectStorySectionProps) => {
   return (
     <section className="reveal">
       <p className="eyebrow mb-3">{label}</p>
@@ -22,4 +22,4 @@ export function ProjectStorySection({
       </div>
     </section>
   );
-}
+};

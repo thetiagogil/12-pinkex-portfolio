@@ -5,7 +5,7 @@ import { homePageContent } from "@/content/site";
 import { AnimatedArrow } from "@/shared/components/common/AnimatedArrow";
 import { PageIntro } from "@/shared/components/common/PageIntro";
 
-export function HomeHero() {
+export const HomeHero = () => {
   const { hero } = homePageContent;
 
   return (
@@ -46,4 +46,4 @@ export function HomeHero() {
       }
     />
   );
-}
+};

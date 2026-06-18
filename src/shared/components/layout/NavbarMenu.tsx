@@ -8,7 +8,7 @@ type NavbarMenuProps = {
   links: readonly NavigationLink[];
 };
 
-export function NavbarMenu({ links }: NavbarMenuProps) {
+export const NavbarMenu = ({ links }: NavbarMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -113,4 +113,4 @@ export function NavbarMenu({ links }: NavbarMenuProps) {
         : null}
     </>
   );
-}
+};

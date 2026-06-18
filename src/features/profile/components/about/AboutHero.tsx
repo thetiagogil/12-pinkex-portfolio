@@ -2,7 +2,7 @@ import { aboutPageContent } from "@/content/site";
 import { FormattedTitle } from "@/shared/components/common/FormattedTitle";
 import { PageIntro } from "@/shared/components/common/PageIntro";
 
-export function AboutHero() {
+export const AboutHero = () => {
   const { hero } = aboutPageContent;
 
   return (
@@ -11,4 +11,4 @@ export function AboutHero() {
       title={<FormattedTitle segments={hero.title} />}
     />
   );
-}
+};

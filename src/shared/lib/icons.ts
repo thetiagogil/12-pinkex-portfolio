@@ -20,6 +20,6 @@ const iconMap = {
   sparkles: Sparkles,
 } satisfies Record<IconName, LucideIcon>;
 
-export function getIcon(iconName: IconName) {
+export const getIcon = (iconName: IconName) => {
   return iconMap[iconName];
-}
+};

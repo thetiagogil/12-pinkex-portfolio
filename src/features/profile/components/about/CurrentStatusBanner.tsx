@@ -1,6 +1,6 @@
 import { profileInfo } from "@/content/profile";
 
-export function CurrentStatusBanner() {
+export const CurrentStatusBanner = () => {
   return (
     profileInfo.openToWork.value && (
       <section className="pb-8 sm:pb-10">
@@ -19,4 +19,4 @@ export function CurrentStatusBanner() {
       </section>
     )
   );
-}
+};
