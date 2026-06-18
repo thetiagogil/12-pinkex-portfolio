@@ -11,6 +11,6 @@ export const getPreviewSkillGroups = () => {
   return skillGroups.filter((group) => getPreviewSkillItems(group).length > 0);
 };
 
-export function getPreviewSkillItems(group: SkillGroup) {
+export const getPreviewSkillItems = (group: SkillGroup) => {
   return group.previewLimit ? group.items.slice(0, group.previewLimit) : [];
-}
+};
